@@ -171,3 +171,26 @@ set noswapfile
 set tags+=/usr/include/tags
 set tags+=./tags
 map ta :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+"mapping HJKL with SHIFT to turn page
+map <S-j> <S-Down>
+map <S-k> <S-Up>
+map <S-h> <S-Left>
+map <S-l> <S-Right>
+
+"change Tab to four spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+
+
+
+
+
+
+
+
+
+
+
