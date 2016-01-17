@@ -104,3 +104,15 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 ulimit -c unlimited
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+alias dcp='cd ~/jats_cbuilder/pwei_myki-dc-printer_0.0.20000.mbu_89539/src'
+
+
+
+
+
+
+
+
