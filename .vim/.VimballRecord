@@ -1,2 +1,3 @@
 ZoomWin.vba: call delete('/home/cyg/.vim/plugin/ZoomWinPlugin.vim')|call delete('/home/cyg/.vim/doc/ZoomWin.txt')|call delete('/home/cyg/.vim/autoload/ZoomWin.vim')
 getscript.vba: call delete('/home/cyg/.vim/plugin/getscriptPlugin.vim')|call delete('/home/cyg/.vim/autoload/getscript.vim')|call delete('/home/cyg/.vim/GetLatest/GetLatestVimScripts.dist')|call delete('/home/cyg/.vim/doc/pi_getscript.txt')
+tcomment.vba: call delete('/root/.vim/doc/tcomment.txt')|call delete('/root/.vim/plugin/tcomment.vim')|call delete('/root/.vim/autoload/tcomment.vim')
