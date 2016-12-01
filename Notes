@@ -1,0 +1,7 @@
+add python and ruby support
+
+λ hg clone https://vim.googlecode.com/hg/ vim
+λ cd vim
+λ ./configure --enable-pythoninterp --enable-rubyinterp
+λ make
+λ sudo make install
