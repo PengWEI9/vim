@@ -1,9 +1,10 @@
+﻿
 " .vimrc - Vim configuration file.
 "
 " Copyright (c) 2010 Jeffy Du. All Rights Reserved.
 "
 " Maintainer: Jeffy Du <jeffy.du@gmail.com>
-"    Created: 2010-01-01
+" Created: 2010-01-01
 " LastChange: 2010-04-22
 
 " GENERAL SETTINGS: {{{1
@@ -14,51 +15,51 @@ filetype plugin indent on
 " Syntax highlighting.
 syntax on
 " Setting colorscheme
-color mycolor
+"color mycolor
 " Other settings.
-set   autoindent
-set   autoread
-set   autowrite
-set   background=dark
-set   backspace=indent,eol,start
+set autoindent
+set autoread
+set autowrite
+set background=dark
+set backspace=indent,eol,start
 set nobackup
-set   cindent
-set   cinoptions=:0
-set   cursorline
-set   completeopt=longest,menuone
+set cindent
+set cinoptions=:0
+set cursorline
+set completeopt=longest,menuone
 set noexpandtab
-set   fileencodings=utf-8,gb2312,gbk,gb18030
-set   fileformat=unix
-set   foldenable
-set   foldmethod=marker
-set   guioptions-=T
-set   guioptions-=m
-set   guioptions-=r
-set   guioptions-=l
-set   helpheight=10
-set   helplang=cn
-set   hidden
-set   history=100
-set   hlsearch
-set   ignorecase
-set   incsearch
-set   laststatus=2
-set   mouse=a
-set   number
-set   pumheight=10
-set   ruler
-set   scrolloff=5
-set   shiftwidth=4
-set   showcmd
-set   smartindent
-set   smartcase
-set   tabstop=4
-set   termencoding=utf-8
-set   textwidth=80
-set   whichwrap=h,l
-set   wildignore=*.bak,*.o,*.e,*~
-set   wildmenu
-set   wildmode=list:longest,full
+set fileencodings=utf-8,gb2312,gbk,gb18030
+set fileformat=unix
+set foldenable
+set foldmethod=marker
+set guioptions-=T
+set guioptions-=m
+set guioptions-=r
+set guioptions-=l
+set helpheight=10
+set helplang=cn
+set hidden
+set history=100
+set hlsearch
+set ignorecase
+set incsearch
+set laststatus=2
+set mouse=a
+set number
+set pumheight=10
+set ruler
+set scrolloff=5
+set shiftwidth=4
+set showcmd
+set smartindent
+set smartcase
+set tabstop=4
+set termencoding=utf-8
+set textwidth=80
+set whichwrap=h,l
+set wildignore=*.bak,*.o,*.e,*~
+set wildmenu
+set wildmode=list:longest,full
 set nowrap
 
 " AUTO COMMANDS: {{{1
@@ -66,9 +67,9 @@ set nowrap
 "autocmd FileType c,cpp set expandtab
 " Restore the last quit position when open file.
 autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \     exe "normal g'\"" |
-    \ endif
+      \ if line("'\"") > 0 && line("'\"") <= line("$") |
+      \ exe "normal g'\"" |
+      \ endif
 
 " SHORTCUT SETTINGS: {{{1
 " Set mapleader
@@ -105,13 +106,13 @@ let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeQuitOnOpen=1
 " cscope.vim
 if has("cscope")
-    set csto=1
-    set cst
-    set nocsverb
-    if filereadable("cscope.out")
-        cs add cscope.out
-    endif
-    set csverb
+  set csto=1
+  set cst
+  set nocsverb
+  if filereadable("cscope.out")
+    cs add cscope.out
+  endif
+  set csverb
 endif
 " OmniCppComplete.vim
 "set nocp 
@@ -122,9 +123,9 @@ let g:OmniCpp_SelectFirstItem=2
 
 " VimGDB.vim
 if has("gdb")
-	set asm=0
-	let g:vimgdb_debug_file=""
-	run macros/gdb_mappings.vim
+  set asm=0
+  let g:vimgdb_debug_file=""
+  run macros/gdb_mappings.vim
 endif
 " LookupFile setting
 let g:LookupFile_TagExpr='"./tags.filename"'
@@ -141,16 +142,16 @@ let g:snips_email="cmdxiaoha@163.com"
 let g:snips_copyright="SicMicro, Inc"
 " plugin shortcuts
 function! RunShell(Msg, Shell)
-	echo a:Msg . '...'
-	call system(a:Shell)
-	echon 'done'
+  echo a:Msg . '...'
+  call system(a:Shell)
+  echon 'done'
 endfunction
-nmap  <F2> :TlistToggle<cr>
-nmap  <F3> :NERDTreeToggle<cr>
-nmap  <F4> :MRU<cr>
-nmap  <F5> <Plug>LookupFile<cr>
-nmap  <F6> :vimgrep /<C-R>=expand("<cword>")<cr>/ **/*.c **/*.h<cr><C-o>:cw<cr>
-nmap  <F9> :call RunShell("Generate tags", "ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .")<cr>
+nmap <F2> :TlistToggle<cr>
+nmap <F3> :NERDTreeToggle<cr>
+nmap <F4> :MRU<cr>
+nmap <F5> <Plug>LookupFile<cr>
+nmap <F6> :vimgrep /<C-R>=expand("<cword>")<cr>/ **/*.c **/*.h<cr><C-o>:cw<cr>
+nmap <F9> :call RunShell("Generate tags", "ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .")<cr>
 nmap <F10> :call HLUDSync()<cr>
 nmap <F11> :call RunShell("Generate filename tags", "~/.vim/shell/genfiletags.sh")<cr>
 nmap <F12> :call RunShell("Generate cscope", "cscope -Rb")<cr>:cs add cscope.out<cr>
@@ -178,18 +179,18 @@ map <S-h> <S-Left>
 map <S-l> <S-Right>
 
 "change Tab to four spaces
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
+set tags+=~/seebo_eco/OE_5.0_1.2/sources/tags
+set tags+=~/seebo_eco/OE_5.0_1.2/sources/xbmc/xbmc-HEX/xbmc/pvr/tags
+" let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
-set tags+=~/jats_cbuilder/pwei_myki-dc-printer_0.0.20000.mbu_89539/tags
-
-
-
-
-
-
-
-
-
-
+let g:clang_library_path = '/usr/lib/llvm-3.6/lib'
+let g:clang_complete_copen=1
+let g:clang_periodic_quickfix=1
+let g:clang_snippets=1
+let g:clang_close_preview=1
+let g:clang_use_library=1
+let g:clang_user_options='-stdlib=libc++ -std=c++11 -IIncludePath'
+let g:neocomplcache_enable_at_startup=1
