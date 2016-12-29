@@ -5,3 +5,7 @@ add python and ruby support
 λ ./configure --enable-pythoninterp --enable-rubyinterp
 λ make
 λ sudo make install
+
+
+#delete all text from curosr to first white space (including white space)
+dw
