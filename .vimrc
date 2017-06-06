@@ -182,9 +182,6 @@ map <S-l> <S-Right>
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set tags+=~/seebo_eco/OE_5.0_1.2/sources/tags
-set tags+=~/seebo_eco/OE_5.0_1.2/sources/xbmc/xbmc-HEX/xbmc/pvr/tags
-" let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 let g:clang_library_path = '/usr/lib/llvm-3.6/lib'
 let g:clang_complete_copen=1
